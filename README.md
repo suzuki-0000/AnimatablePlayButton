@@ -1,7 +1,7 @@
 # AnimatablePlayButton
 
 Animated Button written in Swift2.0, using CALayer.
-![Demo](https://raw.githubusercontent.com/okmr-d/okmr-d.github.io/master/img/DOFavoriteButton/demo.gif)
+![sample](Screenshots/example01.gif)
 
 ## features
 - YouTube Player and its new morphing play/pause button, I wanted to understand how it was made and replicate it myself.
