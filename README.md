@@ -1,12 +1,13 @@
 # AnimatablePlayButton
 
 Animated Button written in Swift2.0, using CALayer.
+
 ![sample](Screenshots/example01.gif)
 
 ## features
 - YouTube Player and its new morphing play/pause button, I wanted to understand how it was made and replicate it myself.
 - I tried to make it using CAShapeLayer, and keyframe animation. 
-- It seems like it, but not elegant. code is a bit messy, no extendable. I gave up.
+- It seems like it, but not elegant. no extendable. I gave up.
 
 ## Requirements
 - iOS 8.0+
