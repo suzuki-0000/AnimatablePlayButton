@@ -140,28 +140,28 @@ public class AnimatablePlayButton: UIButton {
 		
 		// SELECT
 		pauseLeftSelect.values = [
-			NSValue(CATransform3D: CATransform3DMakeTranslation(pauseLineWidth * 0.1, 0, 0)),
+			NSValue(CATransform3D: CATransform3DMakeTranslation(pauseLineWidth * 0, 0, 0)),
 			NSValue(CATransform3D: CATransform3DMakeTranslation(pauseLineWidth * 0.51, 0, 0)),
 			NSValue(CATransform3D: CATransform3DMakeTranslation(pauseLineWidth * 0.51, 0, 0)),
 			NSValue(CATransform3D: CATransform3DMakeTranslation(pauseLineWidth * 0.51, 0, 0)),
 			NSValue(CATransform3D: CATransform3DMakeTranslation(pauseLineWidth * 0.51, 0, 0)),
 		]
 		pauseRightSelect.values = [
-			NSValue(CATransform3D: CATransform3DMakeTranslation(-pauseLineWidth * 0.1, 0, 0)),
+			NSValue(CATransform3D: CATransform3DMakeTranslation(-pauseLineWidth * 0, 0, 0)),
 			NSValue(CATransform3D: CATransform3DMakeTranslation(-pauseLineWidth * 0.51, 0, 0)),
 			NSValue(CATransform3D: CATransform3DMakeTranslation(-pauseLineWidth * 0.51, 0, 0)),
 			NSValue(CATransform3D: CATransform3DMakeTranslation(-pauseLineWidth * 0.51, 0, 0)),
 			NSValue(CATransform3D: CATransform3DMakeTranslation(-pauseLineWidth * 0.51, 0, 0)),
 		]
 		playTopSelect.values = [
-			NSValue(CATransform3D: CATransform3DMakeTranslation(0, bounds.height * 0.4, 0)),
+			NSValue(CATransform3D: CATransform3DMakeTranslation(0, bounds.height * 0.3, 0)),
 			NSValue(CATransform3D: CATransform3DMakeTranslation(0, bounds.height * 0.76, 0)),
 			NSValue(CATransform3D: CATransform3DMakeTranslation(0, bounds.height * 0.76, 0)),
 			NSValue(CATransform3D: CATransform3DMakeTranslation(0, bounds.height * 0.76, 0)),
 			NSValue(CATransform3D: CATransform3DMakeTranslation(0, bounds.height * 0.76, 0)),
 		]
 		playBottomSelect.values = [
-			NSValue(CATransform3D: CATransform3DMakeTranslation(0, -bounds.height * 0.4, 0)),
+			NSValue(CATransform3D: CATransform3DMakeTranslation(0, -bounds.height * 0.3, 0)),
 			NSValue(CATransform3D: CATransform3DMakeTranslation(0, -bounds.height * 0.76, 0)),
 			NSValue(CATransform3D: CATransform3DMakeTranslation(0, -bounds.height * 0.76, 0)),
 			NSValue(CATransform3D: CATransform3DMakeTranslation(0, -bounds.height * 0.76, 0)),
@@ -198,12 +198,19 @@ public class AnimatablePlayButton: UIButton {
 			NSValue(CATransform3D: CATransform3DIdentity),
 		]
 		
-		setCommonProperty(pauseLeftSelect)
-		setCommonProperty(pauseRightSelect)
+		setPauseProperty(pauseLeftSelect)
+		setPauseProperty(pauseRightSelect)
 		setCommonProperty(playTopSelect)
 		setCommonProperty(playBottomSelect)
 	}
 	
+	private func setPauseProperty(animation: CAKeyframeAnimation) {
+		animation.duration = 0.4
+		animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+		animation.removedOnCompletion = false
+		animation.fillMode = kCAFillModeForwards
+	}
+    
 	private func setCommonProperty(animation: CAKeyframeAnimation) {
 		animation.duration = 0.4
 		animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)

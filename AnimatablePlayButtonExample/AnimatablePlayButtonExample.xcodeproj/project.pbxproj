@@ -12,6 +12,7 @@
 		892EE45D1C1EE64700A9BE36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892EE45B1C1EE64700A9BE36 /* Main.storyboard */; };
 		892EE45F1C1EE64700A9BE36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892EE45E1C1EE64700A9BE36 /* Assets.xcassets */; };
 		892EE4621C1EE64700A9BE36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892EE4601C1EE64700A9BE36 /* LaunchScreen.storyboard */; };
+		893180731C243BA7005BE57F /* AnimatablePlayButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892EE46E1C1EE67700A9BE36 /* AnimatablePlayButton.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				893180731C243BA7005BE57F /* AnimatablePlayButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
