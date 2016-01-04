@@ -15,7 +15,7 @@
 		892EE43E1C1EE5FC00A9BE36 /* AnimatablePlayButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnimatablePlayButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		892EE4411C1EE5FC00A9BE36 /* AnimatablePlayButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatablePlayButton.h; sourceTree = "<group>"; };
 		892EE4431C1EE5FC00A9BE36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		892EE4491C1EE60700A9BE36 /* AnimatablePlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatablePlayButton.swift; sourceTree = "<group>"; };
+		892EE4491C1EE60700A9BE36 /* AnimatablePlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AnimatablePlayButton.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +283,7 @@
 				892EE4481C1EE5FC00A9BE36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
