@@ -1,6 +1,6 @@
 # AnimatablePlayButton
 
-Animated Button written in Swift2.0, using CALayer, CAKeyframeAnimation.
+Animated Play and Pause Button written in Swift2.0, using CALayer, CAKeyframeAnimation.
 
 ![sample](Screenshots/example01.gif)
 
