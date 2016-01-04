@@ -2,13 +2,12 @@
 //  AnimatablePlayButton.swift
 //  AnimatablePlayButton
 //
-//  Created by 鈴木 啓司 on 2015/12/01.
-//  Copyright © 2015年 suzuki_keishi. All rights reserved.
+//  Created by suzuki keishi on 2015/12/01.
+//  Copyright © 2015 suzuki_keishi. All rights reserved.
 //
 
 import UIKit
 
-@IBDesignable
 public class AnimatablePlayButton: UIButton {
     
 	public var color: UIColor! = .whiteColor() {
@@ -45,21 +44,36 @@ public class AnimatablePlayButton: UIButton {
     
     public override func awakeFromNib() {
         super.awakeFromNib()
+        setup()
         createLayers(frame)
-		clipsToBounds = true
     }
     
 	public required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
+        setup()
 		createLayers(frame)
-		clipsToBounds = true
 	}
 	
 	override public required init(frame: CGRect) {
 		super.init(frame: frame)
+        setup()
 		createLayers(frame)
-		clipsToBounds = true
 	}
+    
+    convenience public init(origin: CGPoint, lengthOfSize: CGFloat){
+        self.init(frame: CGRectMake(origin.x, origin.y, lengthOfSize, lengthOfSize))
+    }
+    
+    convenience public init(lengthOfSize: CGFloat){
+        self.init(frame: CGRectMake(0, 0, lengthOfSize, lengthOfSize))
+    }
+    
+    // MARK: - private
+    private func setup(){
+		clipsToBounds = true
+        bgColor = .blackColor()
+        color = .whiteColor()
+    }
 	
 	private func createLayers(frame: CGRect) {
 		
@@ -202,7 +216,8 @@ public class AnimatablePlayButton: UIButton {
 		animation.removedOnCompletion = false
 		animation.fillMode = kCAFillModeForwards
 	}
-	
+    
+    // MARK: - public
 	public func select() {
 		selected = true
 		

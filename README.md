@@ -1,31 +1,41 @@
 # AnimatablePlayButton
 
-Animated Button written in Swift2.0, using CALayer.
+Animated Button written in Swift2.0, using CALayer, CAKeyframeAnimation.
 
 ![sample](Screenshots/example01.gif)
 
 ## features
-- Only using CAShapeLayer, no image.
+- Only using CAShapeLayer, CAKeyframeAnimation. not from image object.
 
 ## Requirements
 - iOS 8.0+
 - Swift 2.0+
 - ARC
 
-## Installation
-#### Carthage
-TODO
+##Installation
 
-#### CocoaPods
-TODO
+####CocoaPods
+available on CocoaPods. Just add the following to your project Podfile:
+```
+pod 'AnimatablePlayButton'
+use_frameworks!
+```
+
+####Carthage
+To integrate into your Xcode project using Carthage, specify it in your Cartfile:
+
+```ogdl
+github "suzuki-0000/AnimatablePlayButton"
+```
 
 ## How to use
-See the code snippet below for an example of how to implement, or example project would be easy to understand.
+See the code snippet below for an example of how to implement.
+example project would be easy to understand.
 
 #### 1. Create a button, specify backgroundColor of Button(bgColor), and button color(color).
 ```swift
 let button = AnimatablePlayButton(frame: CGRectMake(0, 0, 44, 44))
-button.bgColor = UIColor(red: 38.0 / 255, green: 151.0 / 255, blue: 68.0 / 255, alpha: 1)
+button.bgColor = .blackColor()
 button.color = .whiteColor()
 self.view.addSubview(button)
 ```
@@ -46,3 +56,4 @@ func tapped(sender: AnimatablePlayButton) {
 
 ## License
 available under the MIT license. See the LICENSE file for more info.
+

@@ -16,9 +16,9 @@ class ViewController: UIViewController {
         
         view.backgroundColor = .blackColor()
         
-        let button = AnimatablePlayButton(frame: CGRectMake(0, 0, 120, 120))
+        let button = AnimatablePlayButton(lengthOfSize: 120)
         button.center = CGPointMake(CGRectGetMidX(view.frame), CGRectGetMidY(view.frame))
-        button.bgColor =  .blackColor()
+        button.bgColor = .blackColor()
         button.color = .whiteColor()
         button.addTarget(self, action: Selector("tapped:"), forControlEvents: UIControlEvents.TouchUpInside)
         
