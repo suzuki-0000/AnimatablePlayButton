@@ -2,7 +2,7 @@ AnimatablePlayButton
 ========================
 
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/AnimatablePlayButton.svg?style=flat)](http://cocoadocs.org/docsets/AnimatablePlayButton)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/AnimatablePlayButton.svg?style=flat)](http://cocoadocs.org/docsets/AnimatablePlayButton)
 [![Swift 2.0](https://img.shields.io/badge/Swift-2.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
 Animated Play and Pause Button written in Swift, using CALayer, CAKeyframeAnimation.
