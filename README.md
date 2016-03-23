@@ -3,7 +3,6 @@ AnimatablePlayButton
 
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/AnimatablePlayButton.svg?style=flat)](http://cocoadocs.org/docsets/AnimatablePlayButton)
-[![Swift 2.0](https://img.shields.io/badge/Swift-2.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
 Animated Play and Pause Button written in Swift, using CALayer, CAKeyframeAnimation.
 
@@ -34,9 +33,6 @@ github "suzuki-0000/AnimatablePlayButton"
 ```
 
 ## How to use
-See the code snippet below for an example of how to implement.
-example project would be easy to understand.
-
 #### 1. Create a button, specify backgroundColor of Button(bgColor), and button color(color).
 ```swift
 let button = AnimatablePlayButton(frame: CGRectMake(0, 0, 44, 44))
